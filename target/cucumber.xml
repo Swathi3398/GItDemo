@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="64.711" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="GitHub Login feature" name="Positive login scenario" time="17.857">
+<system-out><![CDATA[
+Given User is on the GitHub login page......................................passed
+When User needs to enter "swathi2513@gmail.com" and "Munny@3793"............passed
+And User clicks on submit button............................................passed
+Then User is on their GitHub account page...................................passed
+And User gets email notification for successful login.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="GitHub Login feature" name="Negative login scenario - #1.1" time="12.613">
+<system-out><![CDATA[
+Given User is on the GitHub login page......................................passed
+When User needs to get data from  0 and 0...................................passed
+And User clicks on submit button............................................passed
+Then User is on the same page...............................................passed
+And User gets forgot password link..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="GitHub Login feature" name="Negative login scenario - #1.2" time="12.705">
+<system-out><![CDATA[
+Given User is on the GitHub login page......................................passed
+When User needs to get data from  0 and 1...................................passed
+And User clicks on submit button............................................passed
+Then User is on the same page...............................................passed
+And User gets forgot password link..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="GitHub Login feature" name="Negative login scenario - #1.3" time="9.94">
+<system-out><![CDATA[
+Given User is on the GitHub login page......................................passed
+When User needs to get data from  0 and 2...................................passed
+And User clicks on submit button............................................passed
+Then User is on the same page...............................................passed
+And User gets forgot password link..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="GitHub Login feature" name="Negative login scenario - #1.4" time="11.278">
+<system-out><![CDATA[
+Given User is on the GitHub login page......................................passed
+When User needs to get data from  0 and 3...................................passed
+And User clicks on submit button............................................passed
+Then User is on the same page...............................................passed
+And User gets forgot password link..........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,40 @@
+
+@login @positive
+Scenario: Positive login scenario                                  # src/test/resources/features/login.feature:28
+  Given User is on the GitHub login page                           # com.stepdef.LoginStepDef.user_is_on_the_git_hub_login_page()
+  When User needs to enter "swathi2513@gmail.com" and "Munny@3793" # com.stepdef.LoginStepDef.user_needs_to_enter_and(java.lang.String,java.lang.String)
+  And User clicks on submit button                                 # com.stepdef.LoginStepDef.user_clicks_on_submit_button()
+  Then User is on their GitHub account page                        # com.stepdef.LoginStepDef.user_is_on_their_git_hub_account_page()
+  And User gets email notification for successful login            # com.stepdef.LoginStepDef.user_gets_email_notification_for_successful_login()
+
+@login @negative
+Scenario Outline: Negative login scenario   # src/test/resources/features/login.feature:46
+  Given User is on the GitHub login page    # com.stepdef.LoginStepDef.user_is_on_the_git_hub_login_page()
+  When User needs to get data from  0 and 0 # com.stepdef.LoginStepDef.user_needs_to_get_data_from_and(java.lang.Integer,java.lang.Integer)
+  And User clicks on submit button          # com.stepdef.LoginStepDef.user_clicks_on_submit_button()
+  Then User is on the same page             # com.stepdef.LoginStepDef.user_is_on_the_same_page()
+  And User gets forgot password link        # com.stepdef.LoginStepDef.user_gets_forgot_password_link()
+
+@login @negative
+Scenario Outline: Negative login scenario   # src/test/resources/features/login.feature:47
+  Given User is on the GitHub login page    # com.stepdef.LoginStepDef.user_is_on_the_git_hub_login_page()
+  When User needs to get data from  0 and 1 # com.stepdef.LoginStepDef.user_needs_to_get_data_from_and(java.lang.Integer,java.lang.Integer)
+  And User clicks on submit button          # com.stepdef.LoginStepDef.user_clicks_on_submit_button()
+  Then User is on the same page             # com.stepdef.LoginStepDef.user_is_on_the_same_page()
+  And User gets forgot password link        # com.stepdef.LoginStepDef.user_gets_forgot_password_link()
+
+@login @negative
+Scenario Outline: Negative login scenario   # src/test/resources/features/login.feature:48
+  Given User is on the GitHub login page    # com.stepdef.LoginStepDef.user_is_on_the_git_hub_login_page()
+  When User needs to get data from  0 and 2 # com.stepdef.LoginStepDef.user_needs_to_get_data_from_and(java.lang.Integer,java.lang.Integer)
+  And User clicks on submit button          # com.stepdef.LoginStepDef.user_clicks_on_submit_button()
+  Then User is on the same page             # com.stepdef.LoginStepDef.user_is_on_the_same_page()
+  And User gets forgot password link        # com.stepdef.LoginStepDef.user_gets_forgot_password_link()
+
+@login @negative
+Scenario Outline: Negative login scenario   # src/test/resources/features/login.feature:49
+  Given User is on the GitHub login page    # com.stepdef.LoginStepDef.user_is_on_the_git_hub_login_page()
+  When User needs to get data from  0 and 3 # com.stepdef.LoginStepDef.user_needs_to_get_data_from_and(java.lang.Integer,java.lang.Integer)
+  And User clicks on submit button          # com.stepdef.LoginStepDef.user_clicks_on_submit_button()
+  Then User is on the same page             # com.stepdef.LoginStepDef.user_is_on_the_same_page()
+  And User gets forgot password link        # com.stepdef.LoginStepDef.user_gets_forgot_password_link()
