@@ -46,10 +46,14 @@ WebElement signInELe;
 		if(element.isDisplayed())
 		{
 			System.out.println("Logo displayed");
+			System.out.println("Logo displayed");
+			System.out.println();
 		}
 		else
 		{
 			System.out.println("Logo not displayed");
+			System.out.println("Logo not displayed");
+			System.out.println();
 		}
 	}
 }

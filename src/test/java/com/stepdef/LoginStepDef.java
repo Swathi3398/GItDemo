@@ -47,6 +47,14 @@ public class LoginStepDef {
 		System.out.println("Before 2");
 		System.out.println("Before 3");
 		System.out.println("Before 4");
+		
+		System.out.println("Before 5");
+		System.out.println("Before 6");
+		System.out.println("Before 7");
+		System.out.println("Before 8");
+		System.out.println("Before 9");
+		System.out.println("Before 10");
+		
 	}
 
 	@Given("User is on the GitHub login page")
