@@ -51,5 +51,17 @@ public class BaseTest {
 		}
 		
 	}
+	
+	@AfterMethod
+	public void tearDown1()
+	{
+		try {
+			Thread.sleep(3000);
+			driver.quit();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+	}
 
 }

@@ -71,4 +71,11 @@ public class FunctionalityTest  extends BaseTest{
 		Object[][] data= {{"raj","raj@123"},{"giri","giri@123"},{"hari","hari@123"}};
 		return data;
 	}
+	
+	@DataProvider(name="credDP")
+	public Object[][] dataProviderLogin1()
+	{
+		Object[][] data= {{"raj","raj@123"},{"giri","giri@123"},{"hari","hari@123"}};
+		return data;
+	}
 }
